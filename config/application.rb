@@ -20,6 +20,7 @@ module Toy
     # config.eager_load_paths << Rails.root.join("extras")
     config.generators do |g|
       g.test_framework :rspec
+      g.factory_bot suffix: "factory"
     end
   end
 end
