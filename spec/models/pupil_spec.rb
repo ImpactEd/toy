@@ -8,6 +8,9 @@ RSpec.describe Pupil, type: :model do
     it "makes school if not given" do
       expect(create(:pupil).school).to be_a School
     end
+    it "creates pupil external ids" do
+      expect(create(:pupil).external_ident).to match(/pupil-ident-\d+/)
+    end
   end
 
   describe "#external_ident" do
