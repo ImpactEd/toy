@@ -21,6 +21,7 @@ module Toy
     config.generators do |g|
       g.test_framework :rspec
       g.factory_bot suffix: "factory"
+      g.stylesheets     false
     end
   end
 end
