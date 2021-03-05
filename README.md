@@ -13,7 +13,7 @@ The assessment data comes to us in the format of json (one measurement per json 
 
 ## Our data structure
 
-* `School` (with a `name`)
+* `School` (with a `name` and `wonde_id` to represent the external data service provider)
 * `Pupil` (belonging to one school, with `first_name`, `last_name` and an `external ident` used by external systems)
 * `PupilMeasurement` (belonging to one pupil, on a particular `measurement_date`, for a specific `assessment` name, having an `original_mark` and a converted numeric `score`)
 
@@ -46,21 +46,27 @@ This is a toy rails app to give you something to work with but start from scratc
 
 * to set it up
   * checkout repo
-  * install ruby 2.7
+  * install ruby 2.7.2
+  * install node 14, yarn 
 
   ```shell
   bundle install
+  yarn install 
   rails db:setup
-  ```
-
-* to start server on port 3000
-
-  ```shell
-  rails s
   ```
 
 * to run existing rspecs
 
   ```shell
   rspec spec
+  ```
+
+* (if you want to start a server on port 3000)
+
+  ```shell
+    bin/webpack-dev-server
+  ```
+  and
+  ```shell
+  rails s
   ```
