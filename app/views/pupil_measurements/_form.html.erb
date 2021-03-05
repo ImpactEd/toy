@@ -1,0 +1,42 @@
+<%= form_with(model: pupil_measurement) do |form| %>
+  <% if pupil_measurement.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(pupil_measurement.errors.count, "error") %> prohibited this pupil_measurement from being saved:</h2>
+
+      <ul>
+        <% pupil_measurement.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :assessment %>
+    <%= form.text_field :assessment %>
+  </div>
+
+  <div class="field">
+    <%= form.label :original_mark %>
+    <%= form.text_field :original_mark %>
+  </div>
+
+  <div class="field">
+    <%= form.label :score %>
+    <%= form.number_field :score %>
+  </div>
+
+  <div class="field">
+    <%= form.label :measurement_date %>
+    <%= form.date_select :measurement_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pupil_id %>
+    <%= form.text_field :pupil_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

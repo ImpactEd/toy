@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Assessment:</strong>
+  <%= @pupil_measurement.assessment %>
+</p>
+
+<p>
+  <strong>Original mark:</strong>
+  <%= @pupil_measurement.original_mark %>
+</p>
+
+<p>
+  <strong>Score:</strong>
+  <%= @pupil_measurement.score %>
+</p>
+
+<p>
+  <strong>Measurement date:</strong>
+  <%= @pupil_measurement.measurement_date %>
+</p>
+
+<p>
+  <strong>Pupil:</strong>
+  <%= @pupil_measurement.pupil_id %>
+</p>
+
+<%= link_to 'Edit', edit_pupil_measurement_path(@pupil_measurement) %> |
+<%= link_to 'Back', pupil_measurements_path %>
