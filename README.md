@@ -3,7 +3,7 @@
 ## Scenario:
 Schools are running interventions to try to improve pupils' performance.
 
-Their pupils are taking some kinds of assessment. They will take them before some intervention and then afterwards, so
+Their pupils are taking some kinds of assessments. They will take them before the interventions and then afterwards, so
 we can measure the impact the intervention has on them. The assessment might be a questionnaire about their attitude
 to learning, or perhaps an online assessment of some academic activity.
 
