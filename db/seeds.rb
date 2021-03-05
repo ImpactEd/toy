@@ -1,7 +1,13 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+school = School.create!(name: "Washington High School")
+school.pupils.create(first_name: "Josh", last_name: "Lyman", external_ident: "pupil-ident-1")
+school.pupils.create(first_name: "Josiah", last_name: "Bartlet", external_ident: "pupil-ident-2")
+school.pupils.create(first_name: "CJ", last_name: "Cregg", external_ident: "pupil-ident-3")
+school.pupils.create(first_name: "Toby", last_name: "Zeigler", external_ident: "pupil-ident-4")
+school.pupils.create(first_name: "Donna", last_name: "Moss", external_ident: "pupil-ident-5")
+school.pupils.create(first_name: "Sam", last_name: "Seaborn", external_ident: "pupil-ident-6")
+school.pupils.create(first_name: "Charlie", last_name: "Young", external_ident: "pupil-ident-7")
+school.pupils.create(first_name: "Leo", last_name: "McGarry", external_ident: "pupil-ident-8")
+school.pupils.create(first_name: "Abbey", last_name: "Bartlet", external_ident: "pupil-ident-9")
+school.pupils.create(first_name: "Will", last_name: "Bailey", external_ident: "pupil-ident-10")
+school.pupils.create(first_name: "Kate", last_name: "Harper", external_ident: "pupil-ident-11")
+school.pupils.create(first_name: "Zoey", last_name: "Bartlet", external_ident: "pupil-ident-12")
