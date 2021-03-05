@@ -1,3 +1,3 @@
 class School < ApplicationRecord
-  has_many :pupil, inverse_of: :school
+  has_many :pupils, inverse_of: :school
 end

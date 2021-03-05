@@ -1,5 +1,5 @@
 class Pupil < ApplicationRecord
-  belongs_to :school, inverse_of: :pupil
+  belongs_to :school, inverse_of: :pupils
   has_many :pupil_measurements, inverse_of: :pupil
 
   before_create do
