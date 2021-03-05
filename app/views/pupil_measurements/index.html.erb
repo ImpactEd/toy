@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Pupil Measurements</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Assessment</th>
+      <th>Original mark</th>
+      <th>Score</th>
+      <th>Measurement date</th>
+      <th>Pupil</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pupil_measurements.each do |pupil_measurement| %>
+      <tr>
+        <td><%= pupil_measurement.assessment %></td>
+        <td><%= pupil_measurement.original_mark %></td>
+        <td><%= pupil_measurement.score %></td>
+        <td><%= pupil_measurement.measurement_date %></td>
+        <td><%= pupil_measurement.pupil_id %></td>
+        <td><%= link_to 'Show', pupil_measurement %></td>
+        <td><%= link_to 'Edit', edit_pupil_measurement_path(pupil_measurement) %></td>
+        <td><%= link_to 'Destroy', pupil_measurement, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Pupil Measurement', new_pupil_measurement_path %>
