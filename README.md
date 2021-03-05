@@ -40,3 +40,27 @@ What we'd like to do when we get together is to
 ## This app
 
 This is a toy rails app to give you something to work with but start from scratch if you need to. 
+
+
+### Quick ref
+
+* to set it up
+  * checkout repo
+  * install ruby 2.7
+
+  ```shell
+  bundle install
+  rails db:setup
+  ```
+
+* to start server on port 3000
+
+  ```shell
+  rails s
+  ```
+
+* to run existing rspecs
+
+  ```shell
+  rspec spec
+  ```
