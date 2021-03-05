@@ -1,7 +1,10 @@
 {
-  "pupil-ident" : "pupil-ident-12",
-  "assessment" : "Attitude to learning",
-  "measured-at" :"2021-03-04 16:14:59",
-  "original-mark": "medium",
-  "score": 3
+  "requested-at": "2021-03-04 17:19:01",
+  "collected-data": {
+    "ident": "pupil-ident-12",
+    "assessment": "Attitude to learning",
+    "collected-at": "2021-03-01 16:14:59",
+    "original-mark": "medium",
+    "score": 3
+  }
 }

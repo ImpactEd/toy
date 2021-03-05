@@ -12,7 +12,7 @@ to learning, or perhaps an online assessment of some academic activity.
 
 The pupils all have an "external_ident" which is an arbitrary string of some kind (but we'll assume that all the pupils have the external_ident of "pupil-ident-N" where N is an integer between 1 and 20).
 
-The assessment data comes to us in the format of json which also has the external_ident in it -- this [sample json](./sample.json) is our only documentation.
+The assessment data comes to us in the format of json (one measurement per json file) which also has the external_ident in it -- this [sample json](./sample.json) is a full example and the only "documentation" we've been given by the external service provider.
 
 ## Models
 
